@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DENTRAN</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        div{
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de transito</h1>
+    <input type="number" name="txt1" id="txt1">
+    <input type="button" value="VERIFICAR" onclick="verificar()">
+    <div id="dv1">RESULTADO</div>
+
+
+        <script>
+            function verificar() {
+                var tx1 = window.document.querySelector('#txt1')
+                var di = window.document.querySelector('#dv1')
+                var vel = Number(txt1.value)
+                di.innerHTML = `Sua velocidade atual é de ${vel}Km/h `
+                if (vel > 75.0) {
+                    di.innerHTML += '<p>Voce foi <strong>MULTADO</strong> por ecesso de velocidade</p>'
+                }
+                di.innerHTML += '<p>Dirija sempre com cinto de segurança</p>'
+                
+
+            }
+ 
+        </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #8b0000;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center; 
+}
+
+section {
+    background: #ffffff;
+    border-radius: 10px;
+    width: 480px;
+    padding: 10px;
+    margin: auto;
+}
+
+footer, a {
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #000000;
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando numeros</title>
+    <style>
+        body{
+            font: normal 15pt verdana;
+        }
+
+        h1{
+            margin-top: 0px;
+        }
+
+        p {
+            color: white;
+            background: #26267c;
+            margin-left: 110px;
+            width: 200px;
+            height: 200px;
+            line-height: 190px;
+            text-align: center;
+        }
+
+        input{
+            height: 30px;
+        }
+
+        div#res{
+            color: #000000;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Somado valores</h1>
+    <input type="number" name="nu1" id="nu1"> +
+    <input type="number" name="nu2" id="nu2">
+    <input type="button" value="Somar" onclick="somar()">
+    <div id="res">Resultado</div>
+    <p class="p1">TRAJETO...</p>
+
+
+
+    <script> 
+        window.alert('Ola! Mundo!')
+        var nome = window.prompt('Como é o seu nome ?')
+        window.alert('Seu nome é: ' + nome)
+
+        var p = window.document.querySelector('.p1')
+        p.addEventListener('click', clicar )
+        p.addEventListener('mouseenter', entrar )
+        p.addEventListener('mouseout', sair )
+
+
+        function entrar() {
+            p.innerText = 'ENTROU'
+        }
+
+        function sair() {
+            p.innerText= 'SAIU'
+            p.style.color = '#fff'
+            p.style.background = '#26267c'
+        }
+
+        function clicar() {
+            p.innerText = 'CLICOU'
+            p.style.background = '#000000'
+            p.style.color = 'red'
+        }
+        
+
+        function somar() {
+           
+            var ip1 = window.document.querySelector('#nu1')
+            var ip2 = window.document.querySelector('#nu2')
+            var r = window.document.querySelector('#res')
+            var n1 = Number(nu1.value)
+            var n2 = Number(nu2.value)
+            var s = n1 + n2
+            r.innerText = `O resultado de ${n1} + ${n2} é: ${s} `
+        }
+        
+        window.document.write(`Seu nome é:<strong> ${nome}</strong> `)
+
+    </script>
+</body>
+</html>
